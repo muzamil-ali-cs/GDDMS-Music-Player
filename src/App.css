@@ -1,8 +1,4 @@
-/* =========================================
-   GDDMS MUSIC PLAYER — COMPLETE STYLESHEET
-========================================= */
 
-/* ===== GLOBAL ===== */
 
 * {
   margin: 0;
@@ -35,8 +31,6 @@ button {
   color: inherit;
 }
 
-/* ===== MAIN LAYOUT ===== */
-
 .app {
   display: flex;
   min-height: 100vh;
@@ -53,8 +47,6 @@ button {
   width: 100%;
   min-width: 0;
 }
-
-/* ===== SIDEBAR ===== */
 
 .sidebar {
   width: 240px;
@@ -180,8 +172,6 @@ button {
   box-shadow: 0 0 12px #34d399;
 }
 
-/* ===== SIDEBAR COLLAPSE ===== */
-
 .sidebar-collapsed .sidebar {
   width: 82px;
   padding-left: 14px;
@@ -206,8 +196,6 @@ button {
 .sidebar-collapsed .nav-item:hover {
   transform: none;
 }
-
-/* ===== TOPBAR ===== */
 
 .topbar {
   display: flex;
@@ -264,8 +252,6 @@ button {
   transform: translateY(-2px);
 }
 
-/* ===== WELCOME BANNER ===== */
-
 .welcome {
   position: relative;
   overflow: hidden;
@@ -321,8 +307,6 @@ button {
   color: #c4b5d5;
 }
 
-/* ===== PLAYER SECTION ===== */
-
 .player-section {
   display: grid;
   grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
@@ -349,8 +333,6 @@ button {
     0 15px 45px rgba(0, 0, 0, 0.2),
     0 0 25px rgba(147, 51, 234, 0.06);
 }
-
-/* ===== LIBRARY ===== */
 
 .library-top {
   display: flex;
@@ -396,8 +378,6 @@ button {
   display: none;
 }
 
-/* ===== SEARCH ===== */
-
 .library-search {
   display: flex;
   align-items: center;
@@ -423,8 +403,6 @@ button {
 .library-search input::placeholder {
   color: #8e829e;
 }
-
-/* ===== SONG LIST ===== */
 
 .song-list {
   display: flex;
@@ -546,8 +524,6 @@ button {
   font-size: 12px;
 }
 
-/* ===== NOW PLAYING ===== */
-
 .now-playing-panel {
   position: relative;
   text-align: center;
@@ -634,8 +610,6 @@ button {
   margin-top: 7px;
 }
 
-/* ===== PROGRESS BAR ===== */
-
 .progress-area {
   display: flex;
   align-items: center;
@@ -680,8 +654,6 @@ button {
   opacity: 0.4;
   cursor: not-allowed;
 }
-
-/* ===== PLAYER CONTROLS ===== */
 
 .player-bottom-controls {
   display: grid;
@@ -832,8 +804,6 @@ button {
   box-shadow: 0 0 10px #a855f7;
 }
 
-/* ===== SORT BUTTON ===== */
-
 .sort-button {
   padding: 10px 18px;
   border: 1px solid rgba(180, 140, 255, 0.35);
@@ -867,8 +837,6 @@ button {
 .sort-button:active {
   transform: scale(0.96);
 }
-
-/* ===== PAGE TRANSITIONS ===== */
 
 .player-page {
   min-width: 0;
@@ -909,8 +877,6 @@ button {
   color: #b9a8ce;
   font-size: 13px;
 }
-
-/* ===== IMPORT MUSIC PAGE ===== */
 
 .import-page {
   display: flex;
@@ -1011,8 +977,6 @@ button {
 .import-success strong {
   color: #83e8b6;
 }
-
-/* ===== SONG LIST DROPDOWN ===== */
 
 .song-list-dropdown {
   position: relative;
@@ -1195,8 +1159,6 @@ button {
   border-color: rgba(192, 132, 252, 0.5);
 }
 
-/* ===== ANIMATIONS ===== */
-
 @keyframes pageEnter {
   from {
     opacity: 0;
@@ -1208,8 +1170,6 @@ button {
     transform: translateY(0);
   }
 }
-
-/* ===== RESPONSIVE ===== */
 
 @media (max-width: 1100px) {
   .main-content {
@@ -1402,8 +1362,6 @@ button {
   }
 }
 
-/* ===== ACCESSIBILITY ===== */
-
 button:focus-visible,
 input:focus-visible,
 a:focus-visible {
@@ -1420,10 +1378,6 @@ a:focus-visible {
     scroll-behavior: auto !important;
   }
 }
-
-/* =====================================
-   CENTERED & BIG NOW PLAYING PLAYER
-===================================== */
 
 .player-section:has(.now-playing-panel):not(:has(.library-panel)) {
   display: flex;
@@ -1488,10 +1442,6 @@ a:focus-visible {
   }
 }
 
-/* =====================================
-   MOBILE SIDEBAR CLOSE BUTTON
-===================================== */
-
 .sidebar-heading {
   display: flex;
   align-items: center;
@@ -1535,12 +1485,6 @@ a:focus-visible {
     margin-top: 0;
   }
 }
-
-
-/* =========================================
-   GDDMS LAYOUT FIXES
-   Compact player, clean pages and responsive import
-========================================= */
 
 #root {
   width: 100%;
@@ -1675,7 +1619,6 @@ a:focus-visible {
   display: none;
 }
 
-/* Medium screens */
 @media (max-width: 900px) {
   .player-section:has(.now-playing-panel):not(:has(.library-panel))
   .now-playing-panel {
@@ -1694,7 +1637,6 @@ a:focus-visible {
   }
 }
 
-/* Mobile screens */
 @media (max-width: 700px) {
   .main-content {
     width: 100%;
@@ -1820,9 +1762,6 @@ a:focus-visible {
   }
 }
 
-
-/* ===== PLAYER SIZE & RESPONSIVE CONTROLS FIX ===== */
-
 .player-section:has(.now-playing-panel):not(:has(.library-panel)) {
   max-width: 1180px;
   width: 100%;
@@ -1911,8 +1850,6 @@ a:focus-visible {
     height: 45px;
   }
 }
-
-/* ===== SONG DRAWER: TEXT-ONLY SONG LIST ===== */
 
 .song-drawer .drawer-track {
   display: flex;
